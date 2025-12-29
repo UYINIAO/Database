@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3498db">
+    <meta name="description" content="电子商务物流管理与互联网金融电子支付期末复习总结">
+    
+    <!-- 预加载Font Awesome核心字体 -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <title>期末学科复习总结 - 电子商务物流管理与互联网金融电子支付总结</title>
+    
+    <!-- 异步加载Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'; optimizeIconLoading();">
+    
+    <!-- 备用内联样式，确保图标区域占位 -->
+    <style>
+        /* 确保在图标加载完成前显示占位符空间 */
+        [class*="fa-"] {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.125em;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            /* speak 属性已废弃，移除无效声明 */
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* 使用swap确保内容立即显示 */
+            font-display: swap;
+        }
+    </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        :root {
+            --book1-color: #3498db;
+            --book2-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
+            --light-text: #6c757d;
+            --border-color: #dee2e6;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --scroll-padding-top: 120px;
+        }
+        
+        html {
+            scroll-padding-top: var(--scroll-padding-top);
+        }
+        
+        [id] {
+            scroll-margin-top: var(--scroll-padding-top);
+        }
+        
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 15px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 20px;
+        }
+        
+        header {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2a3a 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.45);
+        }
+        
+        header h1 i {
+            color: #F5deb3;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+        
+        header p.author {
+            font-size: 1rem;
+            font-style: italic;
+            color: #999;
+            margin-top: 8px;
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: calc(100vh - 40px);
+            overflow-y: auto;
+        }
+        
+        .book-nav {
+            margin-bottom: 25px;
+        }
+        
+        .book-nav h2 {
+            color: var(--dark-text);
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+        }
+        
+        .book1-nav h2 {
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid var(--book1-color);
+            box-shadow: 0 3px 8px rgba(52, 152, 219, 0.3); /* 蓝色阴影效果 */
+        }
+        
+        .book2-nav h2 {
+            background: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid var(--book2-color);
+            box-shadow: 0 3px 8px rgba(231, 76, 60, 0.3); /* 红色阴影效果 */
+        }
+        
+        .toc-list {
+            list-style: none;
+        }
+        
+        .toc-list li {
+            margin-bottom: 8px;
+        }
+        
+        .sub-toc-list {
+            margin-top: 5px;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        
+        .sub-toc-list li {
+            margin: 5px 0;
+            padding-left: 0;
+            font-size: 0.9em;
+        }
+        
+        .sub-toc-list a {
+            padding: 8px 15px;
+            font-size: 0.9em;
+        }
+        
+        .sub-toc-list a i {
+            font-size: 0.7em;
+            margin-top: 1px;
+        }
+        
+        .toc-list a {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: var(--light-text);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            gap: 8px;
+        }
+        
+        .toc-list a i {
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .book1-nav .toc-list a i {
+            color: var(--book1-color);
+        }
+        
+        .book2-nav .toc-list a i {
+            color: var(--book2-color);
+        }
+        
+        /* 全新的回到顶部按钮 - 确保始终置于顶层 */
+        .back-to-top-container {
+            position: fixed;
+            bottom: 30px;
+            right: 8px; /* 距离右侧屏幕边缘约为原来的1/4 */
+            z-index: 9999; /* 设置极高的z-index确保置于顶层 */
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            /* 确保层级隔离 */
+            isolation: isolate;
+        }
+        
+        .back-to-top-btn {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--book1-color), #2980b9);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4); /* 增强的阴影效果 */
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            -webkit-user-drag: none;
+        }
+        
+        .back-to-top-btn i {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+        }
+        
+        /* 回到顶部按钮中的箭头样式由JavaScript动态生成，确保完美居中 */
+        
+        .back-to-top-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.5); /* 悬停时更强的阴影效果 */
+        }
+        
+        .back-to-top-btn:active {
+            transform: translateY(0) scale(0.98);
+            /* 移除active状态的过渡，确保立即响应用户点击 */
+            transition: none;
+        }
+        
+        /* 目录导航按钮容器 - 确保始终置于顶层 */
+        .category-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            will-change: transform, opacity;
+            /* 确保在容器内也处于顶层 */
+            position: relative;
+            z-index: 1;
+            /* 添加硬件加速 */
+            transform: translateX(100%) translateZ(0);
+            -webkit-transform: translateX(100%) translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 1000;
+            -webkit-perspective: 1000;
+        }
+        
+        .category-buttons.visible {
+            transform: translateX(0) translateZ(0);
+            -webkit-transform: translateX(0) translateZ(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .category-btn {
+            padding: 12px 18px;
+            background: white;
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--dark-text);
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            border: 1px solid var(--border-color);
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+        
+        .category-btn.book1-btn {
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid var(--book1-color);
+        }
+        
+        .category-btn.book2-btn {
+            background: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid var(--book2-color);
+        }
+        
+        .category-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .category-btn:active {
+            transform: translateY(0) scale(0.98);
+            /* 移除active状态的过渡，确保立即响应用户点击 */
+            transition: none;
+        }
+        
+        .category-btn i {
+            font-size: 1.1rem;
+        }
+        
+        /* 使用说明 */
+        .swipe-instruction {
+            position: fixed;
+            bottom: 100px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 15px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-size: 0.9rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        
+        .swipe-instruction.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .swipe-indicator {
+            animation: swipeLeft 1.5s infinite ease-in-out;
+        }
+        
+        @keyframes swipeLeft {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-10px); }
+        }
+        
+        @media (max-width: 1200px) {
+            .floating-nav {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .back-to-top-container {
+                bottom: 5px;
+                right: 2px; /* 移动设备上更靠近右侧边缘 */
+            }
+            
+            .back-to-top-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+            
+            .category-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .swipe-instruction {
+                right: 2px;
+            }
+        }
+        
+        .content-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .book-content {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            height: fit-content;
+        }
+        
+        .book1-content {
+            border-top: 4px solid var(--book1-color);
+        }
+        
+        .book2-content {
+            border-top: 4px solid var(--book2-color);
+        }
+        
+        .book-title {
+            color: var(--dark-text);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.8rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+        }
+        
+        .book1-content .book-title i {
+            color: var(--book1-color);
+        }
+        
+        .book2-content .book-title i {
+            color: var(--book2-color);
+        }
+        
+        .content-section {
+            margin-bottom: 35px;
+        }
+        
+        .section-header {
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            margin-left: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed var(--border-color);
+            font-size: 1.4rem;
+            line-height: 1.3;
+        }
+        
+        .section-header i {
+            margin-top: 2px;
+        }
+        
+        .book1-content .section-header {
+            color: var(--book1-color);
+        }
+        
+        .book2-content .section-header {
+            color: var(--book2-color);
+        }
+        
+        .content-item {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--book1-color);
+        }
+        
+        .book2-content .content-item {
+            border-left-color: var(--book2-color);
+        }
+        
+        .content-item h3 {
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-weight: normal;
+        }
+        
+        .content-item h3 .item-number {
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .content-item h3 .item-text {
+            flex: 1;
+            min-width: 200px;
+            font-weight: bold;
+            padding-top: 2px;
+        }
+        
+        .calc-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+        
+        .calc-table th,
+        .calc-table td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        
+        .calc-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .calc-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .calc-table tr:hover {
+            background: #f0f7ff;
+        }
+        
+        .item-text u {
+            font-weight: normal;
+        }
+        
+        .item-number {
+            background: var(--book1-color);
+            color: white;
+            min-width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            padding: 0 8px;
+            flex-shrink: 0;
+        }
+        
+        .book2-content .item-number {
+            background: var(--book2-color);
+        }
+        
+        .content-item p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .content-item ul {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        
+        .content-item li {
+            margin-bottom: 10px;
+            padding-left: 0;
+        }
+        
+        .content-item li::before {
+            display: none;
+        }
+        
+        .floating-nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transform: translateX(80px);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .floating-nav.visible {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .back-to-top {
+            width: 50px;
+            height: 50px;
+            background: var(--book1-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            margin-top: 30px;
+            border-top: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+                height: auto;
+                margin-bottom: 15px;
+            }
+            
+            .content-area {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .book-content {
+                padding: 15px;
+            }
+            
+            .back-to-top {
+                width: 48px;
+                height: 48px;
+                font-size: 1.1rem;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .book-title {
+                font-size: 1.3rem;
+            }
+            
+            .section-header {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                gap: 12px;
+            }
+            
+            header {
+                padding: 15px 12px;
+            }
+            
+            header h1 {
+                font-size: 1.3rem;
+                flex-direction: column;
+                gap: 6px;
+            }
+            
+            header p {
+                font-size: 0.75rem;
+                line-height: 1.3;
+                text-align: center;
+                word-wrap: break-word;
+                hyphens: auto;
+                padding: 0 8px;
+                max-width: calc(100% - 10px);
+                overflow-wrap: break-word;
+                white-space: normal;
+                margin: 0 auto;
+                display: block;
+                box-sizing: border-box;
+            }
+            
+            .sidebar {
+                padding: 12px;
+            }
+            
+            .book-nav h2 {
+                padding: 8px;
+                font-size: 1rem;
+            }
+            
+            .toc-list a {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+            
+            .book-content {
+                padding: 12px;
+            }
+            
+            .book-title {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+            
+            .section-header {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+                margin-left: 8px;
+                padding-bottom: 6px;
+            }
+            
+            .content-item {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+            
+            .content-item h3 {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+            
+            .item-number {
+                min-width: 28px;
+                height: 28px;
+                font-size: 0.8rem;
+            }
+            
+            .content-item p,
+            .content-item li {
+                font-size: 0.9rem;
+            }
+            
+            footer {
+                padding: 15px;
+                margin-top: 20px;
+                font-size: 0.85rem;
+            }
+            
+            .back-to-top-container {
+                bottom: 15px;
+                right: 5px;
+            }
+            
+            .back-to-top {
+                width: 44px;
+                height: 44px;
+                font-size: 1rem;
+            }
+            
+            .floating-nav {
+                bottom: 15px;
+                right: 10px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+            
+            .book-title {
+                font-size: 1.1rem;
+            }
+            
+            .section-header {
+                font-size: 1rem;
+            }
+            
+            .content-item {
+                padding: 10px;
+            }
+            
+            .toc-list a {
+                padding: 6px 8px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        .sub-toc-list {
+            margin-left: 15px;
+        }
+        
+        .book-content {
+            padding: 15px;
+        }
+        
+        .book-title {
+            font-size: 1.3rem;
+            padding-bottom: 10px;
+        }
+        
+        .section-header {
+            font-size: 1.2rem;
+        }
+        
+        .content-item {
+            padding: 15px;
+        }
+        
+        .question {
+            padding-left: 15px;
+        }
+        
+        .options {
+            padding-left: 20px;
+        }
+        
+        .question p span[style*="color: #e74c3c"] {
+            font-size: 1em;
+            display: inline-block;
+        }
+        
+        div[style*="grid-column: 1 / -1"] {
+            padding: 12px 15px;
+            font-size: 0.85rem;
+        }
+        
+        .back-to-top-container {
+            right: 5px;
+            bottom: 10px;
+        }
+        
+        .back-to-top-btn {
+            width: 45px;
+            height: 45px;
+            font-size: 1.2rem;
+        }
+        
+        a, button, .back-to-top-btn, .category-btn {
+            touch-action: manipulation;
+        }
+        
+        .exercise-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .exercise-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark-text);
+        }
+        
+        .question {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .question::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background: var(--book1-color);
+            border-radius: 50%;
+        }
+        
+        .book2-content .question::before {
+            background: var(--book2-color);
+        }
+        
+        .options {
+            padding-left: 30px;
+            margin-top: 10px;
+        }
+        
+        .option {
+            margin-bottom: 8px;
+        }
+        
+        .answer {
+            font-weight: 600;
+            color: var(--book1-color);
+        }
+        
+        .book2-content .answer {
+            color: var(--book2-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book-open"></i> 期末学科复习总结</h1>
+            <p>电子商务物流管理与互联网金融电子支付总结</p>
+            <p class="author">作者：兀枭ZhS</p>
+        </header>
+        
+        <!-- 免责声明 -->
+        <div style="grid-column: 1 / -1; background: rgba(231, 76, 60, 0.1); border: 1px solid rgba(231, 76, 60, 0.3); border-radius: 12px; padding: 15px 20px; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.6; color: #555;">
+            <p>本网站提供的 "期末考点总结"（含选择题、判断题及相关解析），均为个人基于课程教材、课堂笔记整理的<strong>学习参考资料</strong>，仅用于辅助记忆和复习。</p>
+            <p>1．资料不构成权威标准答案，亦不替代学校官方教材、教师授课内容及考试指导文件；</p>
+            <p>２．内容仅为个人学习梳理，可能存在疏漏或表述偏差，请勿作为唯一复习依据；</p>
+            <p>３．本资料仅供非商业、非盈利的个人学习使用，不承担因使用本资料导致的学习效果差异、考试成绩波动等相关责任。</p>
+        </div>
+        
+        <aside class="sidebar">
+            <div class="book-nav book1-nav">
+                <h2 id="book1-nav"><i class="fas fa-book"></i> 电子商务物流管理</h2>
+                <ul class="toc-list">
+                     <li><a href="#book1-chapter1"><i class="fas fa-chevron-right"></i>一、选择题</a></li>
+                     <li><a href="#book1-chapter2"><i class="fas fa-chevron-right"></i>二、填空题</a></li>
+                     <li><a href="#book1-chapter3"><i class="fas fa-chevron-right"></i>三、简答题</a></li>
+                     <li><a href="#book1-chapter4"><i class="fas fa-chevron-right"></i>四、计算题</a></li>
+                     <li><a href="#book1-chapter5"><i class="fas fa-chevron-right"></i>五、论述题</a></li>
+                  </ul>
+            </div>
+            
+            <div class="book-nav book2-nav">
+                <h2 id="book2-nav"><i class="fas fa-book"></i> 互联网金融与电子支付</h2>
+                <ul class="toc-list">
+                    <li><a href="#book2-chapter1"><i class="fas fa-chevron-right"></i>第一章 互联网金融与电子商务概述</a>
+                        <ul class="sub-toc-list">
+                            <li><a href="#book2-chapter1-multiple-choice"><i class="fas fa-circle"></i>单项选择题</a></li>
+                            <li><a href="#book2-chapter1-true-false"><i class="fas fa-circle"></i>判断题</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#book2-chapter2"><i class="fas fa-chevron-right"></i>第二章 电子银行</a>
+                        <ul class="sub-toc-list">
+                            <li><a href="#book2-chapter2-multiple-choice"><i class="fas fa-circle"></i>单项选择题</a></li>
+                            <li><a href="#book2-chapter2-true-false"><i class="fas fa-circle"></i>判断题</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#book2-chapter3"><i class="fas fa-chevron-right"></i>第三章 电子货币</a>
+                        <ul class="sub-toc-list">
+                            <li><a href="#book2-chapter3-multiple-choice"><i class="fas fa-circle"></i>单项选择题</a></li>
+                            <li><a href="#book2-chapter3-true-false"><i class="fas fa-circle"></i>判断题</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#book2-chapter4"><i class="fas fa-chevron-right"></i>第四章 互联网证券与互联网保险</a>
+                        <ul class="sub-toc-list">
+                            <li><a href="#book2-chapter4-multiple-choice"><i class="fas fa-circle"></i>单项选择题</a></li>
+                            <li><a href="#book2-chapter4-true-false"><i class="fas fa-circle"></i>判断题</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#book2-chapter5"><i class="fas fa-chevron-right"></i>第五章 互联网金融</a>
+                        <ul class="sub-toc-list">
+                            <li><a href="#book2-chapter5-multiple-choice"><i class="fas fa-circle"></i>单项选择题</a></li>
+                            <li><a href="#book2-chapter5-true-false"><i class="fas fa-circle"></i>判断题</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+        <div class="content-area">
+            <!-- 电子商务物流管理 -->
+            <div class="book-content book1-content">
+                <h2 class="book-title"><i class="fas fa-truck-fast"></i> 电子商务物流管理</h2>
+                
+                <div class="content-section" id="book1-chapter1">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 一、选择题（3分/题，共30分）</h3>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">1</span><span class="item-text">不是属于基于大数据的电子商务商业模式的是？（<span style="color: red;">A</span>）</span></h3>
+                        <p>A．传统线下实体零售模式</p>
+                        <p>B．线上线下深度融合模式</p>
+                        <p>C．按需定制模式</p>
+                        <p>D．在线供应链金融模式</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">按需定制模式</em></li>
+                            <li><em style="color: #999;">线上线下深度融合模式</em></li>
+                            <li><em style="color: #999;">互联网金融模式</em></li>
+                            <li><em style="color: #999;">在线供应链金融模式</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">2</span><span class="item-text">基于物流活动的核心组成部分有哪些？（<span style="color: red;">B</span>）</span></h3>
+                        <p>A．产品研发</p>
+                        <p>B．储存</p>
+                        <p>C．品牌推广</p>
+                        <p>D．渠道招商</p>
+                        <p><em style="color: #999;">注释：基本物流活动包括包装、装卸搬运、储存、运输、流通加工、配送、信息处理、等活动</em></p>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">3</span><span class="item-text">电子商务对物流的影响（<span style="color: red;">C</span>）</span></h3>
+                        <p>A．改变物流的运作方式</p>
+                        <p>B．促进物流设施改善物流水平提高</p>
+                        <p>C．提升商品原材料采购质量</p>
+                        <p>D．改变物流企业的经营</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">电子商务改变传统物流观念</em></li>
+                            <li><em style="color: #999;">电子商务改变物流的运作方式</em></li>
+                            <li><em style="color: #999;">电子商务改变物流企业的经营</em></li>
+                            <li><em style="color: #999;">电子商务促进物流基础设施的改善和物流水平的提高</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">4</span><span class="item-text">下列哪项不属于对企业采购概念的正确认识？（<span style="color: red;">D</span>）</span></h3>
+                        <p>A．采购是从资源市场获得资源的过程</p>
+                        <p>B．数字化采购注重全流程数字化</p>
+                        <p>C．采购存在利润杠杆效应</p>
+                        <p>D．采购仅体现为商流过程与物流无关</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">采购是从资源市场上获得资源的过程</em></li>
+                            <li><em style="color: #999;">采购是一项复杂的商业活动</em></li>
+                            <li><em style="color: #999;">采购既是一个商流过程，又是一个物流过程</em></li>
+                            <li><em style="color: #999;">采购存在"利润杠杆效应"</em></li>
+                            <li><em style="color: #999;">采购能够以间接方式提高企业竞争力</em></li>
+                            <li><em style="color: #999;">数字化采购强调全流程数字化</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">5</span><span class="item-text">集中采购的核心优点（<span style="color: red;">B</span>）</span></h3>
+                        <p>A．满足部门个性化的采购需求</p>
+                        <p>B．控制采购成本</p>
+                        <p>C．简化部门内部审核流程</p>
+                        <p>D．缩短采购响应时间</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">控制采购成本</em></li>
+                            <li><em style="color: #999;">避免采购管理上的重复劳动</em></li>
+                            <li><em style="color: #999;">降低运输成本</em></li>
+                            <li><em style="color: #999;">减少企业内部各部门及单位的竞争和冲突</em></li>
+                            <li><em style="color: #999;">能够建立稳定可靠的供应网络</em></li>
+                            <li><em style="color: #999;">提高产品的标准化水平</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">6</span><span class="item-text">联合采购的核心优点（<span style="color: red;">B</span>）</span></h3>
+                        <p>A．完全自主控制采购决策</p>
+                        <p>B．降低采购成本</p>
+                        <p>C．满足单一企业个性化需求</p>
+                        <p>D．简化企业内部管理流程</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">统筹供需，建立产销秩序</em></li>
+                            <li><em style="color: #999;">降低采购成本</em></li>
+                            <li><em style="color: #999;">减少中间环节</em></li>
+                            <li><em style="color: #999;">促进同业合作，达成经济"外交"</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">7</span><span class="item-text">商品分区分类储存的原则（）</span></h3>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <ul>
+                            <li><em style="color: #999;">商品的自然属性和性能应一致</em></li>
+                            <li><em style="color: #999;">商品的养护措施应一致</em></li>
+                            <li><em style="color: #999;">商品的消防方法应一致</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">8</span><span class="item-text">运输管理的原则（<span style="color: red;">B</span>）</span></h3>
+                        <p>A．安全</p>
+                        <p>B．低成本优先</p>
+                        <p>C．经济</p>
+                        <p>D．完整</p>
+                        <p><em style="color: #999;">注释：运输管理应该遵循"快捷、准确、安全、经济、完整"5项原则</em></p>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">9</span><span class="item-text">物流信息的特点（<span style="color: red;">C</span>）</span></h3>
+                        <p>A．信息源分布广，要求数据标准化</p>
+                        <p>B．动态性强，及时性要求高</p>
+                        <p>C．信息价值长期稳定，无需更新</p>
+                        <p>D．数据种类繁多，格式复杂</p>
+                        <p><em style="color: #999;">注释：</em></p>
+                        <p></p>
+                        <ul>
+                            <li><em style="color: #999;">物流信息源分布广，信息量大，要求信息标准化</em></li>
+                            <li><em style="color: #999;">物流信息的动态性特别强，价值衰减速度很快</em></li>
+                            <li><em style="color: #999;">物流信息种类繁多</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">10</span><span class="item-text">第四方物流的核心含义是（<span style="color: red;">D</span>）</span></h3>
+                        <p>A．专注于仓储运输等具体物流作业执行</p>
+                        <p>B．直接参与商品生产和销售环节</p>
+                        <p>C．仅为企业提供物流信息咨询服务</p>
+                        <p>D．整合供应链资源，提供定制化供应链解决方案</p>
+                        <p><em style="color: #999;">注释：第四方物流的核心在于整合供应链资源，通过优化整个供应链的运作，提高效率和降低成本。</em></p>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book1-chapter2">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 二、填空题</h3>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">1</span><span class="item-text">配送中心的功能有：</span></h3>
+                        <ul>
+                            <li>(1) 储存功能</li>
+                            <li>(2) 分拣功能</li>
+                            <li>(3) 集散功能</li>
+                            <li>(4) 衔接功能</li>
+                            <li>(5) 通流加工功能</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">2</span><span class="item-text">物流成本通常由<u>运输成本</u>、<u>库存成本</u>和<u>管理成本</u>三部分组成</span></h3>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">3</span><span class="item-text">运输是物流业务的核心环节，主要运输方式有哪5种？</span></h3>
+                        <ul>
+                            <li>(1) 铁路运输</li>
+                            <li>(2) 公路运输</li>
+                            <li>(3) 水路运输</li>
+                            <li>(4) 航空运输</li>
+                            <li>(5) 管道运输</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book1-chapter3">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 三、简答题</h3>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">1</span><span class="item-text">B2C模式和C2B模式的含义，并举例说明</span></h3>
+                        <p>（1）B2C模式： 企业直接向消费者销售产品或服务的电子商务模式。<em style="color: #999;">核心由企业主导交易。</em></p>
+                        <p>举例：</p>
+                        <ul>
+                            <li>A．京东自营：京东作为企业，直接采购和销售标准化的商品（如手机、家电），主导整个售卖流程。</li>
+                            <li>B．腾讯视频VIP服务：腾讯作为平台，提供统一的付费会员服务，消费者购买的是标准化的视听权益包。</li>
+                        </ul>
+                        <p>（2）C2B模式： 消费者主动提出需求，企业响应并提供定制化产品或服务的电子商务模式。<em style="color: #999;">核心由消费者发起需求。</em></p>
+                        <p>举例：</p>
+                        <ul>
+                            <li>A．尚品宅配：消费者先提出具体的家具尺寸和风格需求，企业再为其进行定制化设计和生产。</li>
+                            <li>B．"猪八戒"网：消费者（需求方）在平台发布一个具体任务（如设计Logo），服务商（企业或个人）来竞标接单。</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">2</span><span class="item-text">简述按物品流通环节分类有哪些具体的成本。</span></h3>
+                        <ul>
+                            <li>(1) 运输成本</li>
+                            <li>(2) 流通加工成本</li>
+                            <li>(3) 配送成本</li>
+                            <li>(4) 包装成本</li>
+                            <li>(5) 装卸搬运成本</li>
+                            <li>(6) 仓储成本</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book1-chapter4">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 四、计算题</h3>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">1</span><span class="item-text">物流公司年折旧额计算</span></h3>
+                        <img src="calc1.png" alt="计算题第1小题" style="max-width: 100%; height: auto;">
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">2</span><span class="item-text">EOQ经济订货批量与总成本计算</span></h3>
+                        <img src="calc2.png" alt="计算题第2小题" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book1-chapter5">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 五、论述题</h3>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">1</span><span class="item-text">京东物流建设"亚洲一号"的目的什么？</span></h3>
+                        <p>（1）京东物流围绕"830战略"，搭建高效协同的全球智能供应链基础网络</p>
+                        <p>（2）通过智能物流园区形成八大物流枢纽提升全国八大经济圈效率</p>
+                        <p>（3）借助智能设备与系统实现硬软件的协同及物流模式创新提高订单处理速度和运营效率</p>
+                    </div>
+                    
+                    <div class="content-item">
+                        <h3><span class="item-number">2</span><span class="item-text">学习收获和未来学习规划（300字）</span></h3>
+                        <p style="text-indent: 2em;">通过电商物流管理课程学习，我掌握了物流核心环节运作逻辑与第四方物流、供应链整合等前沿概念，构建起完整知识框架。明晰了电商与物流的深度绑定关系，理解集中采购、联合采购的成本控制逻辑及智能物流园区的效率价值，也熟知物流信息特点、运输管理原则等基础要点。借助计算题与案例分析，实现理论落地，提升了物流成本核算与资源优化的实操能力。</p>
+                        <p style="text-indent: 2em;">未来将从三方面深化学习：</p>
+                        <p style="text-indent: 2em;">一是聚焦智能物流技术，研究大数据、AI在供应链优化中的应用，关注京东"亚洲一号"技术落地；</p>
+                        <p style="text-indent: 2em;">二是通过模拟采购方案设计、物流网络规划等实践，强化实操与问题解决能力；</p>
+                        <p style="text-indent: 2em;">三是拓展跨境物流、绿色物流等新兴领域，补充供应链金融、合规管理等知识，助力成为复合型物流管理人才。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 互联网金融与电子支付 -->
+            <div class="book-content book2-content">
+                <h2 class="book-title"><i class="fas fa-credit-card"></i> 互联网金融与电子支付</h2>
+                
+                <div class="content-section" id="book2-chapter1">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 第一章 互联网金融与电子商务概述</h3>
+                    
+                    <div class="exercise-section" id="book2-chapter1-multiple-choice">
+                        <div class="exercise-title">一、单项选择题</div>
+                          
+                        <div class="question">
+                                <p>1. 京东商城作为专业电子商务网购平台，按照交易对象分类可称为（ ）电子商务形式</p>
+                                <div class="options">
+                                    <div class="option">A. B2B (Business to Business)</div>
+                                    <div class="option">B. C2C (Consumer to Consumer)</div>
+                                    <div class="option">C. B2C (Business to Consumer)</div>
+                                    <div class="option">D. C2B (Consumer to Business)</div>
+                                </div>
+                                <div class="answer">答案：C</div>
+                            </div>
+                          
+                        <div class="question">
+                                <p>2. 人工智能和大数据技术给互联网金融带来的影响主要体现在（ ）</p>
+                                <div class="options">
+                                    <div class="option">A. 各大银行、互联网企业等积极布局移动平台金融市场，提高存款资金利用率,提高资金周转率</div>
+                                    <div class="option">B. 金融行业长时间运作积累了海量的数据,通过深度学习构建用户画像,进行风险控制等运用，实现数字普惠金融产品与服务开发</div>
+                                    <div class="option">C. 通过物联网与云计算的深度结合,一方面,提升金融感知现实世界的能力;另一方面,大大推动实体属性与价值属性的融合</div>
+                                    <div class="option">D. 将本人的真实的信息进行隐藏，避免外界其他人的偷窥以及查看，大大提高了信息的保密性</div>
+                                </div>
+                                <div class="answer">答案：B</div>
+                            </div>
+                          
+                        <div class="question">
+                                <p>3. 下列各项中，属于网络金融产生的内在驱动因素的是（ ）</p>
+                                <div class="options">
+                                    <div class="option">A. 信息技术的发展</div>
+                                    <div class="option">B. 金融全球化</div>
+                                    <div class="option">C. 市场供需结构变化</div>
+                                    <div class="option">D. 生态金融圈</div>
+                                </div>
+                                <div class="answer">答案：C</div>
+                            </div>
+                          
+                        <div class="question">
+                                <p>4. 与传统金融相比，网络金融具有成本低、效率高、覆盖广、发展快等优势,其中成本低体现在（ ）</p>
+                                <div class="options">
+                                    <div class="option">A. 依托于大数据和电子商务的发展,网络金融得到了快速增长,金融机构开设营业网点的数量和资金投入也随之增加</div>
+                                    <div class="option">B. 操作流程完全标准化,客户不需要排队等候,业务处理速度更快,用户体验更好</div>
+                                    <div class="option">C. 客户能够突破时间和地域的约束,在互联网上寻找需要的金融资源,金融服务更直接，客户基础更广泛</div>
+                                    <div class="option">D. 资金供求双方可以通过网络平台自行完成信息甄别、匹配、定价和交易,无传统中介、无交易成本、无垄断利润</div>
+                                </div>
+                                <div class="answer">答案：D</div>
+                            </div>
+                          
+                        <div class="question">
+                                <p>5. 下列各项中，发生在"电子支付1.0时代"的是（ ）</p>
+                                <div class="options">
+                                    <div class="option">A. 招商银行全面启动国内首家网上银行一网通"</div>
+                                    <div class="option">B. 电话支付、手机支付等全新的电子支付概念层出不究</div>
+                                    <div class="option">C. 商家和消费者都开始接受第三方支付这种新的支付方式</div>
+                                    <div class="option">D. 我国进入"信用卡元年"后，标准贷记卡从零起步，呈现快速的增长态势</div>
+                                </div>
+                                <div class="answer">答案：C</div>
+                            </div>
+                          
+                        <div class="question">
+                            <p>6. 以下为电子支付的发展历程描述，对这一述的排序，下列各项中正确的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. a-b-c-d-e</div>
+                                <div class="option">B. a-c-b-e-d</div>
+                                <div class="option">C. b-a-e-c-d</div>
+                                <div class="option">D. c-a-b-e-d</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                    </div>
+                       
+                    <div class="exercise-section" id="book2-chapter1-true-false">
+                        <div class="exercise-title">二、判断题</div>
+                         
+                        <div class="question">
+                            <p>1. 互联网金融的出现摆脱了传统金融市场格局下对资本在时间、空间上的限制，打破了传统金融行业的市场垄断地位和超高利润的模式。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 信息网络的平均成本随着入网人数的增加而明显递增，其边际成本则随之缓慢递增，但网络的收益却随入网人数的增加而同比例减少。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 对于传统金融机构而言，平台流量地位的重要性要远超长期积累的庞大信息数据资产。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 网络金融的效率高体现在客户能够突破时间和地域的约束，在互联网上寻找需要的金融资源。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 随着智能手机厂商陆续推出人脸识别功能，刷脸支付开始在中国大面积使用，中国移动支付正式进入4.0时代。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 电子支付方式的安全性是指消费者的信息将不会被泄露，均被提供匿名保护。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book2-chapter2">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 第二章 电子银行</h3>
+                    
+                    <div class="exercise-section" id="book2-chapter2-multiple-choice">
+                        <div class="exercise-title">一、单项选择题</div>
+                         
+                        <div class="question">
+                            <p>1. 是在我国银行信息化建设过程中第四阶段的特征。（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 办公自动化</div>
+                                <div class="option">B. 网上银行、网上支付</div>
+                                <div class="option">C. 计算机代替手工操作</div>
+                                <div class="option">D. 业务联网处理</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 下列各项中，属于网络银行面临的系统性风险的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 网络技术性风险</div>
+                                <div class="option">B. 操作性风险</div>
+                                <div class="option">C. 信用风险</div>
+                                <div class="option">D. 法律风险</div>
+                            </div>
+                            <div class="answer">答案：A</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 零售银行的服务对象是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 大企业</div>
+                                <div class="option">B. 事业单位</div>
+                                <div class="option">C. 社会团体</div>
+                                <div class="option">D. 中小企业</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 下列各项中，不属于网络银行新兴业务的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 投资理财咨询</div>
+                                <div class="option">B. 电子账单</div>
+                                <div class="option">C. 网上支付结算</div>
+                                <div class="option">D. 电子支票</div>
+                            </div>
+                            <div class="answer">答案：A</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 从网络银行的发展历程来看，经历的第三个阶段可概括为（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 银行上网</div>
+                                <div class="option">B. 上网银行</div>
+                                <div class="option">C. 网上银行</div>
+                                <div class="option">D. 网银集团</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 下列各项中，不属于自助银行服务设备交易导向功能的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 夜间金库</div>
+                                <div class="option">B. 结单打印</div>
+                                <div class="option">C. 业务咨询</div>
+                                <div class="option">D. 账户转账</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                    </div>
+                      
+                    <div class="exercise-section" id="book2-chapter2-true-false">
+                        <div class="exercise-title">二、判断题</div>
+                         
+                        <div class="question">
+                            <p>1. 无人银行是指无柜员，无保安，无大堂经理，存款、取款、信用卡业务等所有个人业务均由智能机器人替代办理。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 移动银行是指利用计算机与电话集成技术，通过电话自动语音应答和人工服务等方式为客户提供金融服务的一种业务。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 网上银行又被称为「3A银行」，是因为它能在任何时间（anytime）、任何（anywhere）、以任何方式（anyway）为客户提供金融服务。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 按照服务对象的不同，网络银行可分为分支型银行和直接银行。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 在网络银行的系统中，用户的身份认证基于「RSA 公钥密码体制」的加密机制、数字签名机制和用户登录密码的多重保障。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 市场风险是指金融机构因资产不能正常流动或不能正常支付的风险。其后果常常造成金融机构信用损失或银行挤兑。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book2-chapter3">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 第三章 电子货币</h3>
+                    
+                    <div class="exercise-section" id="book2-chapter3-multiple-choice">
+                        <div class="exercise-title">一、单项选择题</div>
+                         
+                        <div class="question">
+                            <p>1. 下列各项中，不属于传统支付工具的是（ ）。</p>
+                            <div class="options">
+                                <div class="option">A. 支票</div>
+                                <div class="option">B. 增值税发票</div>
+                                <div class="option">C. 本票</div>
+                                <div class="option">D. 汇票</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 下列各项中（ ）不是支票背书。</p>
+                            <div class="options">
+                                <div class="option">A. 质押背书</div>
+                                <div class="option">B. 委托收款背书</div>
+                                <div class="option">C. 付款背书</div>
+                                <div class="option">D. 非转让背书</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 电子票据是传统纸质票据的继承和发展，相较传统票据，（ ）主体增加的内容。</p>
+                            <div class="options">
+                                <div class="option">A. 保证人</div>
+                                <div class="option">B. 票据提出行</div>
+                                <div class="option">C. 票据提入行</div>
+                                <div class="option">D. 电子票据交换所</div>
+                            </div>
+                            <div class="answer">答案：A</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 电子汇票的特点不包括（ ）。</p>
+                            <div class="options">
+                                <div class="option">A. 介质电子化</div>
+                                <div class="option">B. 使用期限短</div>
+                                <div class="option">C. 流通范围广</div>
+                                <div class="option">D. 业务品种多</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 下列各项中，属于虚拟货币中的加密货币的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 百度币</div>
+                                <div class="option">B. Q币</div>
+                                <div class="option">C. 新浪微币</div>
+                                <div class="option">D. 比特币</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. （ ）是我国央行发行的法定数字货币。</p>
+                            <div class="options">
+                                <div class="option">A. Bitcoin</div>
+                                <div class="option">B. 数字人民币</div>
+                                <div class="option">C. Litecoin</div>
+                                <div class="option">D. Dogecoin</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>7. 比特币是一种全球网络虚拟货币，和腾讯公司的Q币类似。但是可以兑换成大多数国家的货币。你可以使用比特币购买一些虚拟的物品，只要有人接受。你也可以使用比特币购买现实生活当中的物品。中国人民银行12月6日发出《关于防范比特币风险的通知》，明确要求现阶段各金融机构和支付机构不得开展与比特币相关的业务后，比特币一度从近7000元暴跌至4500元。下列各项中，对这一经济现象认识正确的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. ① ②</div>
+                                <div class="option">B. ② ③</div>
+                                <div class="option">C. ③ ④</div>
+                                <div class="option">D. ① ③</div>
+                            </div>
+                            <div class="answer">答案：A</div>
+                        </div>
+                    </div>
+                      
+                    <div class="exercise-section" id="book2-chapter3-true-false">
+                        <div class="exercise-title">二、判断题</div>
+                         
+                        <div class="question">
+                            <p>1. 信用货币是由银行提供的信用流通工具，其本身的价值等价于其货币价值。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 电子货币作为一种电子结算工具，和人民币一样代表的是一般等价物，可以充当交换媒介。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 类似微信支付、支付宝等网络支付方式在中国快速普及，最后的记账货币的使用范围和规模迅速缩小。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 贷记卡又叫信用卡，是由商业银行或信用卡公司对信用合格的消费者发行的信用证明。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 顾客使用电子钱包不需要在有关银行开立账户，将电子钱包通过电子钱包应用软件安装到电子商务服务器上，利用电子钱包服务系统就可以实现支付。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 数字人民币支持双离线支付，只要手机装有数字钱包，两个手机只需"碰一碰"，就可进行数字货币的传递。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book2-chapter4">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 第四章 互联网证券与互联网保险</h3>
+                    
+                    <div class="exercise-section" id="book2-chapter4-multiple-choice">
+                        <div class="exercise-title">一、单项选择题</div>
+                         
+                        <div class="question">
+                            <p>1. 下列各项中，不属于美国互联网证券代表的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 美林证券</div>
+                                <div class="option">B. 嘉信理财</div>
+                                <div class="option">C. 亿创理财</div>
+                                <div class="option">D. 大和证券</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 互联网保险发展的动因不包括（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 传统销售体系遭遇发展瓶颈</div>
+                                <div class="option">B. 保险产品和服务创新需求</div>
+                                <div class="option">C. 老龄化的消费主体</div>
+                                <div class="option">D. 保险行业形象提升需要</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 下列各项中，属于互联网保险的附属业务的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 报价</div>
+                                <div class="option">B. 产品信息</div>
+                                <div class="option">C. 网上交易</div>
+                                <div class="option">D. 在线客服服务</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 下列各项中，属于互联网保险第三方电子商务平台模式缺点的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 产品单一</div>
+                                <div class="option">B. 销售规模小</div>
+                                <div class="option">C. 运营模式陈旧</div>
+                                <div class="option">D. 产品风险提示存在疏漏</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 经纪业务进入转型时期，这一阶段构建客户关系管理系统，与证券电子商务平台结合起来，出现了大批证券经纪人、客户经理、理财经理、投资顾问等角色。上述现象出现在我国互联网证券发展的（ ）阶段。</p>
+                            <div class="options">
+                                <div class="option">A. 互联网证券1.0（1994-2004年）</div>
+                                <div class="option">B. 互联网证券2.0（2004-2012年）</div>
+                                <div class="option">C. 互联网证券3.0（2013-2019年）</div>
+                                <div class="option">D. 互联网证券4.0（2020年至今）</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                    </div>
+                      
+                    <div class="exercise-section" id="book2-chapter4-true-false">
+                        <div class="exercise-title">二、判断题</div>
+                         
+                        <div class="question">
+                            <p>1. 1999年之前，日本证券业为了尽早从网上争取更多用户而实行的是自由佣金制度。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 2000年进入移动互联网时代，传统券商纷纷"触网"，通过降佣金以及交易线上化，实现经纪业务弯道超车。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 自营网络平台是指保险机构为经营互联网保险业务，依法设立的独立运营、享有完整数据权限的网络平台。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 网络兼业代理是以银行为代表的保险兼业代理机构在网络上实现的保险销售。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 固定佣金交易制度与佣金自由化制度相比更能够促进市场发展。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 互联网可以推进传统保险业的加速发展，使险种的选择、保险计划的设计和销售等方面的费用减少，有利于提高保险公司的经营效益。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="book2-chapter5">
+                    <h3 class="section-header"><i class="fas fa-list"></i> 第五章 互联网金融</h3>
+                    
+                    <div class="exercise-section" id="book2-chapter5-multiple-choice">
+                        <div class="exercise-title">一、单项选择题</div>
+                         
+                        <div class="question">
+                            <p>1. 下列各项中，关于互联网金融的特点的说法错误的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 成本低</div>
+                                <div class="option">B. 效率高</div>
+                                <div class="option">C. 覆盖广</div>
+                                <div class="option">D. 风险小</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 下列各项中，属于我国互联网金融发展的起步阶段的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 传统的金融机构把金融业务搬到互联网上</div>
+                                <div class="option">B. 电子商务作为一种全新的商务运作模式应运而生</div>
+                                <div class="option">C. 第三方支付、众筹等互联网金融业务形态相继出现</div>
+                                <div class="option">D. 众筹平台开始起步</div>
+                            </div>
+                            <div class="answer">答案：C</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 下列各项中，关于大数据金融的特征描述错误的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 高效率性</div>
+                                <div class="option">B. 普惠性</div>
+                                <div class="option">C. 产品可控性</div>
+                                <div class="option">D. 信息不对称性</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 下列各项中，不属于供应链融资解决方案的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 订单融资</div>
+                                <div class="option">B. 房产抵押融资</div>
+                                <div class="option">C. 存货融资</div>
+                                <div class="option">D. 入库单融资</div>
+                            </div>
+                            <div class="answer">答案：B</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 在风险管理理念上，交易行为的真实性、信用的可信度通过数据的方式呈现将会更加重要，第一、第二还款来源的重要性有所降低。下列各项中，属于第一还款来源的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 工资收入</div>
+                                <div class="option">B. 可抵押住房</div>
+                                <div class="option">C. 他人担保</div>
+                                <div class="option">D. 可质押存单</div>
+                            </div>
+                            <div class="answer">答案：D</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>6. 从风险和收益的关系来看，下列各项中，金融产品价格最低的是（ ）</p>
+                            <div class="options">
+                                <div class="option">A. 银行消费贷款</div>
+                                <div class="option">B. 微粒贷</div>
+                                <div class="option">C. 校园贷</div>
+                                <div class="option">D. 民间借贷</div>
+                            </div>
+                            <div class="answer">答案：A</div>
+                        </div>
+                    </div>
+                      
+                    <div class="exercise-section" id="book2-chapter5-true-false">
+                        <div class="exercise-title">二、判断题</div>
+                         
+                        <div class="question">
+                            <p>1. 互联网金融功能也是资金融通功能，是以摆脱传统金融中介为目标，依托互联网让资金在交易者之间实现自由选择和直接融通，弱化金融中介的作用，最终实现"脱媒"。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>2. 互联网金融已经接入中国人民银行征信系统，建立起了信用信息共享机制，具备类似银行的风控、合规和清收机制，因此，不容易发生各类风险问题。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>3. 互联网金融可以一定程度解决具有融资需求频率高、单笔融资额小、数量众多特点的中小企业的融资需求问题。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>4. 大数据金融是指集合海量结构化数据，通过对其进行实时分析，可以为互联网金融机构提供客户全方位信息。()</p>
+                            <div class="answer">答案：×</div>
+                        </div>
+                         
+                        <div class="question">
+                            <p>5. 芝麻信用延伸了传统征信市场的覆盖面，使中国的个人征信体系更加完善，信用变得更有价值。()</p>
+                            <div class="answer">答案：√</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 回到顶部按钮 -->
+        <div class="back-to-top-container">
+            <div class="category-buttons" id="categoryButtons">
+                <a href="#book1-nav" class="category-btn book1-btn"><i class="fas fa-book"></i> 电子商务物流管理</a>
+                <a href="#book2-nav" class="category-btn book2-btn"><i class="fas fa-credit-card"></i> 互联网金融与电子支付</a>
+            </div>
+            <div class="back-to-top-btn" id="backToTopBtn">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+        
+        <!-- 使用说明 -->
+        <div class="swipe-instruction" id="swipeInstruction">
+            <i class="fas fa-hand-point-left swipe-indicator"></i>
+            <span>向左滑动显示目录</span>
+        </div>
+        
+        <footer>
+            <p>2025 | 电子商务物流管理与互联网金融电子支付总结</p>
+        </footer>
+    </div>
+    
+    <script>
+        // 图标加载优化 - 提高Font Awesome加载速度而不改变原始样式
+        function optimizeIconLoading() {
+            // 1. 添加预加载提示，改善感知性能
+            const iconContainers = document.querySelectorAll('.fa-list, .fa-arrow-up, .fa-book, .fa-credit-card, .fa-hand-point-left, .fa-home, .fa-arrow-right');
+            
+            // 2. 预先设置图标容器的尺寸占位，避免布局偏移
+            const preloadStyle = document.createElement('style');
+            preloadStyle.textContent = `
+                /* 预设置图标容器尺寸，避免加载时布局跳动 */
+                .fa-list, .fa-arrow-up, .fa-book, .fa-credit-card, 
+                .fa-hand-point-left, .fa-home, .fa-arrow-right {
+                    min-width: 16px;
+                    min-height: 16px;
+                    display: inline-block;
+                }
+                
+                /* 确保回到顶部按钮图标居中 */
+                .back-to-top-btn i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    transform: translateX(1px); /* 微调箭头位置，使其在圆心中完全居中 */
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                }
+            `;
+            document.head.appendChild(preloadStyle);
+            
+            // 3. 尝试优化Font Awesome加载
+            const fontAwesomeLink = document.querySelector('link[href*="font-awesome"]');
+            if (fontAwesomeLink) {
+                // 添加加载状态监听
+                fontAwesomeLink.addEventListener('load', function() {
+                    console.log('Font Awesome 加载完成');
+                });
+                
+                fontAwesomeLink.addEventListener('error', function() {
+                    console.log('Font Awesome 加载失败，尝试刷新缓存');
+                    // 尝试强制重新加载
+                    const newLink = document.createElement('link');
+                    newLink.rel = 'stylesheet';
+                    newLink.href = fontAwesomeLink.href + '?t=' + new Date().getTime();
+                    document.head.appendChild(newLink);
+                });
+            }
+        }
+        
+        // DOM加载完成后执行优化
+        document.addEventListener('DOMContentLoaded', function() {
+            optimizeIconLoading();
+        });
+        
+        // 全新的回到顶部功能实现
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const categoryButtons = document.getElementById('categoryButtons');
+        const swipeInstruction = document.getElementById('swipeInstruction');
+        
+        // 触摸事件相关变量
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let isCategoriesVisible = false;
+        let autoHideTimer = null;
+        let isAnimating = false; // 添加动画状态标志
+        
+        // 显示/隐藏目录按钮
+        function toggleCategoryButtons(show) {
+            // 如果已经在动画中，或者状态相同，则不执行
+            if (isAnimating || (show === isCategoriesVisible)) {
+                return;
+            }
+            
+            isAnimating = true;
+            
+            if (show) {
+                // 使用setTimeout确保DOM更新在下一帧
+                requestAnimationFrame(() => {
+                    categoryButtons.classList.add('visible');
+                    isCategoriesVisible = true;
+                    
+                    // 清除之前的定时器
+                    if (autoHideTimer) {
+                        clearTimeout(autoHideTimer);
+                    }
+                    
+                    // 移除自动隐藏逻辑，仅通过向右滑动收回
+                });
+            } else {
+                hideCategoryButtons();
+            }
+            
+            // 动画结束后重置状态
+            setTimeout(() => {
+                isAnimating = false;
+            }, 350); // 稍长于动画持续时间，确保完全结束
+        }
+        
+        // 隐藏目录按钮的辅助函数
+        function hideCategoryButtons() {
+            // 使用requestAnimationFrame确保平滑动画
+            requestAnimationFrame(() => {
+                categoryButtons.classList.remove('visible');
+                isCategoriesVisible = false;
+            });
+        }
+        
+        // 显示使用说明
+        function showInstruction() {
+            if (!localStorage.getItem('backToTopInstructionShown')) {
+                setTimeout(() => {
+                    swipeInstruction.classList.add('show');
+                    localStorage.setItem('backToTopInstructionShown', 'true');
+                    
+                    // 8秒后隐藏说明
+                    setTimeout(() => {
+                        swipeInstruction.classList.remove('show');
+                    }, 8000);
+                }, 1000);
+            }
+        }
+        
+        // 点击回到顶部
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            hideCategoryButtons();
+        });
+        
+        // 获取回到顶部容器元素
+        const backToTopContainer = document.querySelector('.back-to-top-container');
+        
+        // 重置触摸事件处理，使用更优化的方式
+        // 移除之前可能存在的事件监听器
+        backToTopBtn.removeEventListener('touchstart', handleTouchStart);
+        backToTopBtn.removeEventListener('touchmove', handleTouchMove);
+        backToTopBtn.removeEventListener('touchend', handleTouchEnd);
+        document.removeEventListener('touchstart', handleTouchStart);
+        document.removeEventListener('touchmove', handleTouchMove);
+        document.removeEventListener('touchend', handleTouchEnd);
+        
+        // 优化触摸事件处理函数，提高滑动灵敏度
+        let touchStartTime = 0;
+        let touchEndTime = 0;
+        let touchYStart = 0;
+        let touchYEnd = 0;
+        
+        function handleTouchStart(e) {
+            // 只有在回到顶部容器区域内滑动才触发
+            touchStartX = e.changedTouches[0].screenX;
+            touchYStart = e.changedTouches[0].screenY;
+            touchStartTime = Date.now();
+        }
+        
+        function handleTouchMove(e) {
+            // 移动时不阻止默认行为，避免影响点击事件
+        }
+        
+        function handleTouchEnd(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            touchYEnd = e.changedTouches[0].screenY;
+            touchEndTime = Date.now();
+            
+            const swipeDistanceX = touchStartX - touchEndX;
+            const swipeDistanceY = Math.abs(touchYStart - touchYEnd);
+            const touchDuration = touchEndTime - touchStartTime;
+            
+            // 极致优化滑动阈值，确保超高灵敏度
+            const thresholdX = 5; // 极低点触滑动距离阈值，轻微滑动即可触发
+            const thresholdY = 50; // 更大幅度放宽Y轴限制，大幅提升容错性
+            const maxTapDuration = 700; // 极大放宽时间阈值，让操作更从容
+            
+            // 判断是否为左右滑动（Y轴移动不大）
+            if (swipeDistanceY < thresholdY) {
+                // 向左滑动触发显示目录
+                if (swipeDistanceX > thresholdX) {
+                    toggleCategoryButtons(true);
+                    return; // 阻止后续的点击逻辑
+                } 
+                // 向右滑动触发隐藏目录
+                else if (swipeDistanceX < -thresholdX) {
+                    toggleCategoryButtons(false);
+                    return; // 阻止后续的点击逻辑
+                }
+            }
+            
+            // 判断是否为快速点击
+            if (touchDuration < maxTapDuration && Math.abs(swipeDistanceX) < thresholdY && swipeDistanceY < thresholdY) {
+                // 这里不调用e.preventDefault()，让点击事件正常触发
+            }
+        }
+        
+        // 将事件监听器添加到回到顶部容器，确保只有在该区域滑动才触发
+        backToTopContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+        backToTopContainer.addEventListener('touchmove', handleTouchMove, { passive: true });
+        backToTopContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+        
+        // 确保点击事件在移动设备上正确触发
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ 
+                top: 0, 
+                behavior: 'smooth' 
+            });
+            hideCategoryButtons();
+        });
+        
+        // 鼠标悬停显示目录（桌面设备）
+        backToTopBtn.addEventListener('mouseenter', function() {
+            toggleCategoryButtons(true);
+        });
+        
+        // 鼠标离开隐藏目录（桌面设备）
+        backToTopBtn.addEventListener('mouseleave', function() {
+            // 只有当鼠标完全离开时才隐藏
+            setTimeout(() => {
+                const isHovering = backToTopBtn.matches(':hover') || 
+                                   Array.from(categoryButtons.children).some(btn => btn.matches(':hover'));
+                if (!isHovering) {
+                    hideCategoryButtons();
+                }
+            }, 300);
+        });
+        
+        // 鼠标悬停在目录按钮上时不要隐藏
+        categoryButtons.addEventListener('mouseenter', function() {
+            if (autoHideTimer) {
+                clearTimeout(autoHideTimer);
+            }
+        });
+        
+        // 页面滚动时自动收回展开的子按钮（添加节流）
+        let scrollTimer = null;
+        window.addEventListener('scroll', function() {
+            if (isCategoriesVisible) {
+                if (scrollTimer) return;
+                scrollTimer = requestAnimationFrame(() => {
+                    hideCategoryButtons();
+                    scrollTimer = null;
+                });
+            }
+        });
+
+        // 页面加载时初始化
+        window.addEventListener('DOMContentLoaded', function() {
+            // 显示使用说明
+            showInstruction();
+        });
+        
+        // 确保目录按钮在点击后能正确导航
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                hideCategoryButtons();
+            });
+        });
+        
+        // 统一处理所有锚点链接和导航激活状态
+        const navLinks = document.querySelectorAll('.toc-list a');
+        const allAnchorLinks = document.querySelectorAll('a[href^="#"]');
+        
+        // 优化：减少事件监听器，使用事件委托
+        const handleLinkAction = function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                setTimeout(() => {
+                    const rect = targetElement.getBoundingClientRect();
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const elementTop = rect.top + scrollTop;
+                    
+                    window.scrollTo({
+                        top: elementTop - 40,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        };
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', handleLinkAction);
+        });
+        
+        allAnchorLinks.forEach(anchor => {
+            anchor.addEventListener('click', handleLinkAction);
+        });
+        
+        // 将答案填入问题括号中的功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 处理选择题
+            const multipleChoiceQuestions = document.querySelectorAll('.exercise-section[id$="multiple-choice"] .question');
+            multipleChoiceQuestions.forEach(question => {
+                const questionText = question.querySelector('p');
+                const answerDiv = question.querySelector('.answer');
+                
+                if (questionText && answerDiv) {
+                    // 提取答案内容
+                    const answerText = answerDiv.textContent;
+                    const answerMatch = answerText.match(/答案：([A-Z])/);
+                    
+                    if (answerMatch && answerMatch[1]) {
+                        const answer = answerMatch[1];
+                        // 将答案填入问题括号中，并用span标签包裹使其显示为指定颜色
+                        const questionHTML = questionText.innerHTML;
+                        const updatedQuestionHTML = questionHTML.replace('（ ）', `（<span style="color: #e74c3c; font-weight: bold;">${answer}</span>）`);
+                        questionText.innerHTML = updatedQuestionHTML;
+                        
+                        // 移除原来的答案div
+                        answerDiv.remove();
+                    }
+                }
+            });
+            
+            // 处理判断题
+            const trueFalseQuestions = document.querySelectorAll('.exercise-section[id$="true-false"] .question');
+            trueFalseQuestions.forEach(question => {
+                const questionText = question.querySelector('p');
+                const answerDiv = question.querySelector('.answer');
+                
+                if (questionText && answerDiv) {
+                    // 提取答案内容
+                    const answerText = answerDiv.textContent;
+                    const answerMatch = answerText.match(/答案：([√×])/);
+                    
+                    if (answerMatch && answerMatch[1]) {
+                        const answer = answerMatch[1];
+                        // 将答案填入问题括号中，并用span标签包裹使其显示为指定颜色
+                        const questionHTML = questionText.innerHTML;
+                        const updatedQuestionHTML = questionHTML.replace('()', `(<span style="color: #e74c3c; font-weight: bold;">${answer}</span>)`);
+                        questionText.innerHTML = updatedQuestionHTML;
+                        
+                        // 移除原来的答案div
+                        answerDiv.remove();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
